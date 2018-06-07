@@ -1,0 +1,59 @@
+.bs-slider{position:relative;overflow:hidden;}
+.bs-slider:hover{cursor:-moz-grab;cursor:-webkit-grab;}
+.bs-slider:active{cursor:-moz-grabbing;cursor:-webkit-grabbing;}
+.bs-slider .bs-slider-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:none;}
+.bs-slider > .carousel-inner{height:100%;}
+.bs-slider > .carousel-inner > .item{height:100%;background-position:center !important;background-size:cover !important;}
+.bs-slider > .carousel-inner > .item.active{display:-webkit-flex;-webkit-align-items:center;display:flex;align-items:center;}
+.bs-slider > .carousel-inner > .item > img,
+.bs-slider > .carousel-inner > .item > a > img{margin:auto;width:100% !important;}
+.fade{opacity:1;}
+.fade .item{top:0;z-index:1;opacity:0;width:100%;position:absolute;left:0 !important;display:block !important;-webkit-transition:opacity ease-in-out 1s;-moz-transition:opacity ease-in-out 1s;-ms-transition:opacity ease-in-out 1s;-o-transition:opacity ease-in-out 1s;transition:opacity ease-in-out 1s;}
+.fade .item:first-child{top:auto;position:relative;}
+.fade .item.active{opacity:1;z-index:2;-webkit-transition:opacity ease-in-out 1s;-moz-transition:opacity ease-in-out 1s;-ms-transition:opacity ease-in-out 1s;-o-transition:opacity ease-in-out 1s;transition:opacity ease-in-out 1s;}
+.control-round .carousel-control{top:47%;opacity:0;width:45px;height:45px;z-index:100;color:#ffffff;display:block;font-size:24px;cursor:pointer;overflow:hidden;line-height:43px;text-shadow:none;position:absolute;font-weight:normal;background:transparent;-webkit-border-radius:100px;border-radius:100px;}
+.control-round:hover .carousel-control{opacity:1;}
+.control-round .carousel-control.left{left:1%;}
+.control-round .carousel-control.right{right:1%;}
+.control-round .carousel-control.left:hover,
+.control-round .carousel-control.right:hover{color:#fdfdfd;background:rgba(0, 0, 0, 0.5);border:0px transparent;}
+.control-round .carousel-control.left>span:nth-child(1){left:45%;}
+.control-round .carousel-control.right>span:nth-child(1){right:45%;}
+.indicators-line > .carousel-indicators{left:0;width:100%;height:4px;font-size:0;overflow-x:hidden;text-align:center;overflow-y:hidden;padding:0;white-space:nowrap;bottom:30px;margin:0;}
+.indicators-line > .carousel-indicators li{padding:0;width:40px;height:5px;text-indent:0;overflow:hidden;text-align:center;position:relative;letter-spacing:1px;-webkit-font-smoothing:antialiased;-webkit-border-radius:50%;border-radius:0;margin:0 8px;-webkit-transition:all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);transition:all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);z-index:10;cursor:pointer;display:block;background:#fff;border:none !important;display:inline-block;}
+.indicators-line > .carousel-indicators li:last-child{margin-right:0;}
+.indicators-line > .carousel-indicators .active{background:#7fcedd;-webkit-transition:box-shadow 0.3s ease;-moz-transition:box-shadow 0.3s ease;-o-transition:box-shadow 0.3s ease;transition:box-shadow 0.3s ease;-webkit-transition:background-color 0.3s ease;-moz-transition:background-color 0.3s ease;-o-transition:background-color 0.3s ease;transition:background-color 0.3s ease;}
+.indicators-line > .carousel-indicators .active:before{transform:scale(0.5);content:"";position:absolute;left:-1px;top:-1px;width:15px;height:15px;border-radius:50%;-webkit-transition:background-color 0.3s ease;-moz-transition:background-color 0.3s ease;-o-transition:background-color 0.3s ease;transition:background-color 0.3s ease;}
+.slide_style_left{text-align:left !important;}
+.slide_style_right{text-align:right !important;}
+.slide_style_center{text-align:center !important;}
+.slide-text{text-align:center;}
+.slide-text > h1{padding:0;color:#fff;font-family:"OpenSans-Extrabold";font-size:40px;font-weight:normal;margin:0;-webkit-animation-delay:0.7s;animation-delay:0.7s;text-align:center;display:inline-block;background:rgba(0, 0, 0, 0.5);padding:15px 20px;border-radius:3px;}
+.slide-text > h1 a{border:solid 1px #fff;color:#fff;font-size:26px;display:inline-block;height:40px;width:40px;text-align:center;line-height:38px;border-radius:20px;position:relative;}
+.slide-text > h1 a:hover{background:#333;}
+.slide-text > h1 .left{margin-left:15px;}
+.slide-text > p{padding:0;margin:0;color:#fff;font-size:20px;line-height:24px;-webkit-animation-delay:1.1s;animation-delay:1.1s;font-family:"OpenSans-Light";text-align:center;margin-top:15px;}
+.slide-text > a.btn-default{display:inline-block;font-family:"OpenSans-Regular";font-size:16px;line-height:40px;padding:0 30px;border:solid 1px;border-radius:3px;margin-top:30px;border-color:#fff;color:#fff;background:none;-webkit-animation-delay:2s;animation-delay:2s;-webkit-transition:background 0.3s ease-in-out, color 0.3s ease-in-out;transition:background 0.3s ease-in-out, color 0.3s ease-in-out;}
+.slide-text > a.btn-default:hover{border-color:#333;background:#333;color:#fff;}
+.slide-text > a.btn-default span{margin-left:10px;}
+.slide-text > a.btn-primary{color:#ffffff;cursor:pointer;font-weight:400;font-size:13px;line-height:15px;margin-left:10px;text-align:center;padding:17px 30px;white-space:nowrap;letter-spacing:1px;background:#00bfff;display:inline-block;text-decoration:none;text-transform:uppercase;border:none;-webkit-animation-delay:2s;animation-delay:2s;-webkit-transition:background 0.3s ease-in-out, color 0.3s ease-in-out;transition:background 0.3s ease-in-out, color 0.3s ease-in-out;}
+.slide-text > a:hover,
+.slide-text > a:active{color:#ffffff;background:#222222;-webkit-transition:background 0.5s ease-in-out, color 0.5s ease-in-out;transition:background 0.5s ease-in-out, color 0.5s ease-in-out;}
+.slider-scroll{position:absolute;bottom:10px;width:100%;}
+.slider-scroll a{color:#f4ae41;font-family:"OpenSans-Light";font-size:18px;line-height:18px;display:inline-block;}
+.slider-scroll a i{font-size:40px;position:relative;top:-6px;}
+@media (max-width:991px){.slide-text h1{font-size:40px;line-height:44px;}
+.slide-text > p{font-size:18px;line-height:22px;}
+.indicators-line > .carousel-indicators{right:20px;}
+}
+@media (max-width:768px){.bs-slider > .carousel-inner > .item{background-attachment:unset !important;}
+.slide-text h1{font-size:26px;line-height:32px;}
+}
+@media (max-width:480px){.slide-text > a.btn-default{padding:0 20px;}
+.slide-text > h1 a{height:32px;width:32px;line-height:30px;top:0px;}
+.control-round .carousel-control{right:10px;}
+}
+.home-banner-carrusel{height:400px;position:relative;}
+.home-banner-carrusel .controles{position:absolute;bottom:30px;width:100%;}
+.home-banner-carrusel .carousel-control{position:relative;top:0;display:inline-block;margin-right:20px;left:0;right:0;border:solid 2px #fff !important;width:32px;height:32px;line-height:28px;}
+.actualidad-banner-carrusel{height:200px;position:relative;}
